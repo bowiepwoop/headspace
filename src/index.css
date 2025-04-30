@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'IdkGay-eKxl';
+  src: url(/font/IdkGay-eKxl.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'IdkGay-eKxl';
+  cursor: url(/cursor/cursor-black.cur), auto;
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-spin {
+  animation: spin-slow 2s linear infinite;
+}
+
+
